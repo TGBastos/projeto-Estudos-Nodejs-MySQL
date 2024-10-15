@@ -1,0 +1,32 @@
+{
+  "name": "projetonode",
+  "version": "1.0.0",
+  "description": "Projeto com node js e MySQL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TGBastos/projetoNode-Sql.git"
+  },
+  "keywords": [
+    "express",
+    "express-handlebars",
+    "bootstrap",
+    "mysql"
+  ],
+  "author": "TGBastos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TGBastos/projetoNode-Sql/issues"
+  },
+  "homepage": "https://github.com/TGBastos/projetoNode-Sql#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "mysql2": "^3.11.3",
+    "nodemon": "^3.1.7"
+  }
+}
