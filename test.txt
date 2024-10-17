@@ -1,0 +1,58 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+public class Main
+{
+	public static void main(String[] args) {
+	    List<Integer> ranked = new ArrayList<Integer>();
+	    ranked.add(100);
+	    ranked.add(100);
+	    ranked.add(50);
+	    ranked.add(40);
+	    ranked.add(40);
+	    ranked.add(20);
+	    ranked.add(10);
+		System.out.println(currentPosition(ranked)); 
+	}
+	
+	public static int currentPosition(List<Integer> ranked){
+        int position = 0;
+        int last = 0;
+        int first = ranked.get(0);
+        for(int i = 1; i <= ranked.size()-1; i++){
+            int c = ranked.get(i);
+            System.out.println(c);
+            if(c == first){
+                position = 1;
+                last = c;
+                continue;
+            } 
+            
+            if (c < last){
+                last = c;
+                position++;
+            } else if(last > c){
+                return position;
+            }
+            System.out.println(position + " Aq");
+        }
+        
+        return position;
+    }
+}
+
